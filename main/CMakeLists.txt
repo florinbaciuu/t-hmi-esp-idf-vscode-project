@@ -60,6 +60,8 @@ set(
     filesystem-v0002
 )
 
+
+
 idf_component_register(
     SRCS
     ${app_sources}
@@ -71,6 +73,10 @@ idf_component_register(
     PRIV_REQUIRES
     ${app_priv_requires}
     WHOLE_ARCHIVE
+)
+
+add_compile_options(
+   -Wno-error
 )
 
 

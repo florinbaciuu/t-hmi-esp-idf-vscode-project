@@ -2,7 +2,8 @@ dependencies:
   esp_lcd_touch:
     dependencies: []
     source:
-      path: /Users/florinbaciu/workspaces/esp-idf-vscode/t-hmi-esp-idf-vscode-project/components/esp_lcd_touch
+      path: 
+        /Users/florinbaciu/Desktop/t-hmi-esp-idf-vscode-project/components/esp_lcd_touch
       type: local
     version: 1.1.2
   idf:
@@ -10,16 +11,18 @@ dependencies:
       type: idf
     version: 5.5.1
   lvgl/lvgl:
-    component_hash: b702d642e03e95928046d5c6726558e6444e112420c77efa5fdb6650b0a13c5d
+    component_hash: 
+      17e68bfd21f0edf4c3ee838e2273da840bf3930e5dbc3bfa6c1190c3aed41f9f
     dependencies: []
     source:
       registry_url: https://components.espressif.com/
       type: service
-    version: 9.3.0
+    version: 9.4.0
   tinyusb:
     dependencies: []
     source:
-      path: /Users/florinbaciu/workspaces/esp-idf-vscode/t-hmi-esp-idf-vscode-project/components/tinyusb
+      path: 
+        /Users/florinbaciu/Desktop/t-hmi-esp-idf-vscode-project/components/tinyusb
       type: local
     version: 0.18.0~2
 direct_dependencies:

@@ -57,7 +57,7 @@ void printSetCommandList() {
     printf("╚══════════════════════════════════════════════════════════════════════════════╝\n");
 }
 
-#define INFO_SET_COUNT (sizeof(set_cmds) / sizeof(set_cmds[0]))
+#define INFO_SET_COUNT ((size_t)(sizeof(set_cmds) / sizeof(set_cmds[0])))
 
 static char set_cmds_help[128] = {0};
 
@@ -65,7 +65,7 @@ static void generate_set_cmds_help_text(void) {
     strcpy(set_cmds_help, ":   ");
     for (size_t i = 0; i < INFO_SET_COUNT; i++) {
         strcat(set_cmds_help, set_cmds[i].name);
-        if (i < INFO_SET_COUNT - 1)
+        if (i + 1 < (size_t)(INFO_SET_COUNT))
             strcat(set_cmds_help, "; ");
     }
 }

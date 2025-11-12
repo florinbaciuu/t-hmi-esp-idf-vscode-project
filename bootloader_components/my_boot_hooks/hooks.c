@@ -23,7 +23,7 @@ void bootloader_before_init(void) {
 void bootloader_after_init(void) {
     ESP_LOGI("HOOK", "This hook is called AFTER bootloader initialization (ESP_LOGI)");
     ESP_EARLY_LOGI("HOOK", "This hook is called AFTER bootloader initialization (ESP_EARLY_LOGI)");
-    ESP_DRAM_LOGI("HOOK", "This hook is called BEFORE bootloader initialization (ESP_DRAM_LOGI)");
+    ESP_DRAM_LOGI("HOOK", "This hook is called AFTER bootloader initialization (ESP_DRAM_LOGI)");
 }
 
 #undef CONFIG_LOG_MAXIMUM_LEVEL

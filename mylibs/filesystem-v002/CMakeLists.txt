@@ -42,3 +42,10 @@ idf_component_register(
     PRIV_REQUIRES
     ${priv_requires}
 )
+
+# dezactivează tratarea warningurilor ca erori pentru componenta asta
+target_compile_options(${COMPONENT_LIB} PRIVATE
+    -Wno-error
+    -Wno-unused-variable
+    -Wno-unused-function
+)

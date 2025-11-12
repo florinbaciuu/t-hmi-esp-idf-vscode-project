@@ -10,13 +10,12 @@ set(
 add_compile_definitions(LV_CONF_PATH="${LV_CONF_PATH}")
 add_compile_definitions(LVGL_VERSION_MAJOR=9)
 
-
-
 # ---------- extra components --------
 # Seteaza folder extra pt componente
 set(
    EXTRA_COMPONENT_DIRS
    lib
+   mylibs
 )
 
 # ---------- ccache ------------------
@@ -39,7 +38,7 @@ idf_build_set_property(MINIMAL_BUILD ON)
 idf_build_set_property(COMPILE_OPTIONS "-Wno-error" APPEND)
 idf_build_set_property(COMPILE_OPTIONS "-Wno-error=type-limits" APPEND)
 
-# ---------- opțiuni adiționale de compilare ----
+# # ---------- opțiuni adiționale de compilare ----
 add_compile_options(
    $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
    $<$<COMPILE_LANGUAGE:CXX>:-Wno-unused-function>

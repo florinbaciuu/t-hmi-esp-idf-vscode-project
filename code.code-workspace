@@ -416,7 +416,11 @@
 		"clangd.inactiveRegions.useBackgroundHighlight": true,
 		"clangd.detectExtensionConflicts": true,
 		"clangd.enable": true,
+		//--------
 		"css.completion.completePropertyWithSemicolon": true,
+		//----------------------------------------------------
+		"terminal.integrated.suggest.enabled": true,
+		"terminal.integrated.suggest.insertTrailingSpace": true,
 		//"cmakeIntelliSence.cmakePath": "/Users/florinbaciu/.espressif/tools/cmake/3.30.2/cmake-3.30.2-macos-universal/CMake.app/Contents/bin",
 		//"cmake.cmakePath": "/Users/florinbaciu/.espressif/tools/cmake/3.30.2/cmake-3.30.2-macos-universal/CMake.app/Contents/bin",
 		//----------------------------------------------------
